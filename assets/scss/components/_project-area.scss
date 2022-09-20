@@ -1,0 +1,49 @@
+.project-area {
+  h2 {
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .all-project {
+    margin-bottom: 20px;
+    .project-item {
+      .card-body {
+        padding: 102px 30px;
+        .card-title {
+          font-size: 42px;
+          font-weight: 400;
+        }
+        .card-title2 {
+          font-size: 21px;
+          font-weight: 400;
+        }
+        .card-text {
+          font-size: 14px;
+        }
+      }
+      .project-img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        position: relative;
+        z-index: -1;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background-color: black;
+          opacity: 0.7;
+          z-index: 3;
+        }
+      }
+    }
+  }
+}
+// linear-gradient(60deg, #29323c 0%, #485563 100%)

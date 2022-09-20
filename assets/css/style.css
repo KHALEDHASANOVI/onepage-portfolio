@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+section {
+  padding: 75px 0px 55px;
+}
+
+span {
+  color: crimson;
+}
+
+.common-button {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 10px 35px;
+  border: 3px solid crimson;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.common-button:hover {
+  color: black;
+  background-color: crimson;
+}
+
+.gray-bg {
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.hero-area {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: -1;
+}
+.hero-area::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+}
+.hero-area .container {
+  z-index: 2;
+}
+.hero-area .container .row .hero-content h1 {
+  color: white;
+  font-size: 48px;
+}
+.hero-area .container .row .hero-content h1 span {
+  color: crimson;
+}
+
+.service-area .service-top h2 {
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.service-area .service-top p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  margin: 0;
+  padding-bottom: 70px;
+}
+.service-area .card-group .card {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: -1;
+}
+.service-area .card-group .card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: 0.7;
+  z-index: 1;
+}
+.service-area .card-group .card .card-img-overlay {
+  z-index: 3;
+  padding: 30px;
+}
+.service-area .card-group .card .card-img-overlay .card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.service-area .card-group .card .card-img-overlay .card-text {
+  font-size: 14px;
+}
+
+.project-area h2 {
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.project-area .all-project {
+  margin-bottom: 20px;
+}
+.project-area .all-project .project-item .card-body {
+  padding: 102px 30px;
+}
+.project-area .all-project .project-item .card-body .card-title {
+  font-size: 42px;
+  font-weight: 400;
+}
+.project-area .all-project .project-item .card-body .card-title2 {
+  font-size: 21px;
+  font-weight: 400;
+}
+.project-area .all-project .project-item .card-body .card-text {
+  font-size: 14px;
+}
+.project-area .all-project .project-item .project-img {
+  width: 100%;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+.project-area .all-project .project-item .project-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 3;
+}
+
+.contact-area h2 {
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  text-align: center;
+}
+.contact-area .contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  -webkit-box-shadow: 0px 0px 18px 0 rgba(0, 0, 0, 0.1725490196);
+          box-shadow: 0px 0px 18px 0 rgba(0, 0, 0, 0.1725490196);
+  -webkit-transition: 0.3s ease box-shadow;
+  transition: 0.3s ease box-shadow;
+}
+.contact-area .contact-item:hover {
+  -webkit-box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.1725490196);
+          box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.1725490196);
+}
+.contact-area .contact-item .contact-icon {
+  width: 75px;
+  height: 75px;
+}
+.contact-area .contact-item .contact-cont h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+.contact-area .contact-item .contact-cont p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

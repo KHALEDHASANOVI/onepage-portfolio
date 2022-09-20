@@ -1,0 +1,38 @@
+.contact-area {
+  h2 {
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    text-align: center;
+  }
+  .contact-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+    &:hover {
+      box-shadow: 0px 0px 5px 0 #0000002c;
+    }
+    .contact-icon {
+      width: 75px;
+      height: 75px;
+    }
+    .contact-cont {
+      h3 {
+        font-size: 25px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  }
+}

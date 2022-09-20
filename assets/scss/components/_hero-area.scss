@@ -1,0 +1,35 @@
+.hero-area {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+  }
+  .container {
+    z-index: 2;
+    .row {
+      .hero-content {
+        h1 {
+          color: white;
+          font-size: 48px;
+          span {
+            color: crimson;
+          }
+        }
+      }
+    }
+  }
+}

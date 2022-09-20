@@ -1,0 +1,9 @@
+@include respond-above(xl) {
+  .container {
+    max-width: 1286px;
+  }
+}
+@include respond-below(xl) {
+}
+@include respond-between(lg, xxl) {
+}
