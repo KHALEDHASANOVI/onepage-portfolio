@@ -3,6 +3,13 @@
     max-width: 1286px;
   }
 }
+@media (min-width: 768px) {
+  .about-me-area .about-img-col {
+    width: 450px !important;
+    height: 500px !important;
+    padding-left: 60px !important;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .project-area .all-project .project-item .card-body {
     padding: 81px 30px;

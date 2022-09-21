@@ -3,8 +3,18 @@
     max-width: 1286px;
   }
 }
-@include respond-below(xl) {
+@include respond-above(md) {
+  .about-me-area {
+    .about-img-col {
+      width: 450px !important;
+      height: 500px !important;
+      padding-left: 60px !important;
+    }
+  }
 }
+// max-width
+@include respond-below(sm) {
+} // max-width
 @include respond-between(lg, xl) {
   .project-area {
     .all-project {

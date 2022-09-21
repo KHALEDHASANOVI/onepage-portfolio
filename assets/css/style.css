@@ -184,6 +184,46 @@ span {
   transition: 0.3s ease transform;
 }
 
+.about-me-area .about-img-col .about-img-div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 10px solid white;
+}
+.about-me-area .about-img-col .about-img-div::after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 40px;
+  height: 98%;
+  width: 98%;
+  border: 10px solid crimson;
+  z-index: -1;
+}
+.about-me-area .about-img-col .about-img-div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-me-area .about-content h2 {
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.about-me-area .about-content h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.about-me-area .about-content p {
+  font-size: 16px;
+  padding-bottom: 40px;
+}
+
 .contact-area h2 {
   font-size: 60px;
   font-weight: 300;
