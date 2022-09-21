@@ -5,5 +5,25 @@
 }
 @include respond-below(xl) {
 }
-@include respond-between(lg, xxl) {
+@include respond-between(lg, xl) {
+  .project-area {
+    .all-project {
+      .project-item {
+        .card-body {
+          padding: 81px 30px;
+        }
+      }
+    }
+  }
+}
+@include respond-between(md, lg) {
+  .project-area {
+    .all-project {
+      .project-item {
+        .card-body {
+          padding: 43px 30px;
+        }
+      }
+    }
+  }
 }

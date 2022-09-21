@@ -1,0 +1,16 @@
+.header-area {
+  .navbar {
+    .navbar-brand {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .navbar-nav {
+      .nav-link {
+        color: white;
+        &:hover {
+          color: crimson;
+        }
+      }
+    }
+  }
+}

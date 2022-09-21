@@ -1,0 +1,24 @@
+.footer-area {
+  margin: 0;
+  padding: 75px 0 5px;
+  .footer-content {
+    .footer-icon {
+      a {
+        color: white;
+        &:hover {
+          color: crimson;
+        }
+        i {
+          font-size: 40px;
+          padding-bottom: 30px;
+          &:not(last-child) {
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+    .copyright-text {
+      font-size: 16px;
+    }
+  }
+}

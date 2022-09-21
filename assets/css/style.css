@@ -39,6 +39,17 @@ span {
   background: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
+.header-area .navbar .navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+}
+.header-area .navbar .navbar-nav .nav-link {
+  color: white;
+}
+.header-area .navbar .navbar-nav .nav-link:hover {
+  color: crimson;
+}
+
 .hero-area {
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,6 +141,10 @@ span {
 .project-area .all-project {
   margin-bottom: 20px;
 }
+.project-area .all-project .project-item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .project-area .all-project .project-item .card-body {
   padding: 102px 30px;
 }
@@ -146,10 +161,11 @@ span {
 }
 .project-area .all-project .project-item .project-img {
   width: 100%;
-  max-height: 400px;
+  max-height: 401px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+  overflow: hidden;
   z-index: -1;
 }
 .project-area .all-project .project-item .project-img::after {
@@ -159,9 +175,13 @@ span {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
   opacity: 0.7;
   z-index: 3;
+}
+.project-area .all-project .project-item .project-img img {
+  -webkit-transition: 0.3s ease transform;
+  transition: 0.3s ease transform;
 }
 
 .contact-area h2 {
@@ -205,4 +225,25 @@ span {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
+}
+
+.footer-area {
+  margin: 0;
+  padding: 75px 0 5px;
+}
+.footer-area .footer-content .footer-icon a {
+  color: white;
+}
+.footer-area .footer-content .footer-icon a:hover {
+  color: crimson;
+}
+.footer-area .footer-content .footer-icon a i {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.footer-area .footer-content .footer-icon a i:not(last-child) {
+  padding-left: 15px;
+}
+.footer-area .footer-content .copyright-text {
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

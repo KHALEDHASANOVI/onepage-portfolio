@@ -2,4 +2,14 @@
   .container {
     max-width: 1286px;
   }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .project-area .all-project .project-item .card-body {
+    padding: 81px 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .project-area .all-project .project-item .card-body {
+    padding: 43px 30px;
+  }
 }/*# sourceMappingURL=responsive.css.map */
